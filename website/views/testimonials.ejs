@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <p>See what others are saying about these dream destinations!</p>
+            <p><a class="btn btn-primary btn-large" href="/testimonials/new">Add New Testimonial</a></p>
+        </div>
+    </header>
+
+    <ul>
+      <% testimonials.forEach(function(x){ %> 
+        <div class="testimonial">
+            <li>"<%= x.entry %>" - <%= x.name %></li>
+        </div>
+        <% }); %>
+    </ul>
+</div>
+
+
+
+
+
+
+<% include partials/footer %>

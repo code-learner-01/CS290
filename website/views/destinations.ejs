@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+  <div class="container">
+      <header class="jumbotron">
+        <div class="container">
+            <h1>Destinations</h1>
+            <p>Adventure awaits in these fantastic locales!</p>
+            <p>
+              <a class="btn btn-primary btn-large" href="/destinations/download">Download Map</a>
+            </p>
+        </div>
+      </header>
+      
+      <div id="galleryDiv" class="row">
+        <% destinations.forEach(function(destination){ %> 
+            <div class="col-md-12 col-sm-6">
+              <div class="thumbnail">
+                <a href= <%= destination.path %>>
+                  <img id="thumbnail" src="<%= destination.image %>">
+                </a>
+                <div class="caption">
+                  <h4><%= destination.name %></h4>
+                </div>
+              </div>
+            </div>
+        <% }) %>
+      </div>
+  </div>
+        
+        
+<% include partials/footer %>

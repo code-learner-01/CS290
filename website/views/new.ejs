@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 id="formH1">Add a New Testimonial</h1>
+        <div id="formDiv">
+            <form action="/testimonials" method="POST">
+                <div class="form-group form-group-lg">
+                    <input class="form-control" type="text" name ="entry" placeholder="Share your travel experience here!">
+                </div>
+                <div class="form-group form-group-sm">
+                    <input class="form-control" type="text" name ="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-default btn-primary btn-block">Submit!</button>
+                </div>
+        </form>
+        <a href="/testimonials">Go Back</a>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>

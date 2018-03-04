@@ -1,0 +1,147 @@
+body {
+    background-color: #242730;
+    /*background: url(https://cdna.artstation.com/p/assets/images/images/008/185/080/large/stefan-s-skellige-new-6.jpg?1511032703);*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*z-index: -1;*/
+    /*color: white;*/
+}
+
+html {
+    height: 100%;
+}
+
+#homeDiv {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding-top: 30%;
+}
+
+#homeDiv p {
+    text-shadow: 2px 2px black;
+}
+
+.testimonial {
+    font-size: 25px;
+    color: white;
+}
+
+#galleryDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formH1 {
+    text-align: center;
+}
+
+#formDiv {
+    width: 70%;
+    margin: 25px auto;
+}
+
+#aboutUs {
+    font-size: 16px;
+    color: white;
+    overflow: auto;
+    height: 25em;
+}
+
+#ytLink {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*#ninokuniBG {*/
+/*  width: 1280px;*/
+/*  height: 720px;*/
+/*  margin: auto;*/
+/*  background-image: url(https://assets.rpgsite.net/images/images/000/013/953/original/nnk_04172012_15.jpg);*/
+/*}*/
+
+/*#skyirmBG {*/
+/*  width: 1280px;*/
+/*  height: 720px;*/
+/*  margin: auto;*/
+/*  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/1e/eb/75/1eeb75307bc92e46adec402c39229393.jpg);*/
+/*}*/
+
+/*#whiterunBG {*/
+/*  width: 1280px;*/
+/*  height: 720px;*/
+/*  margin: auto;*/
+/*  background-image: url(https://staticdelivery.nexusmods.com/mods/1704/images/2259-0-1478469951.jpg);*/
+/*}*/
+
+/*#zeldaBG {*/
+/*  width: 1280px;*/
+/*  height: 720px;*/
+/*  margin: auto;*/
+/*  background-image: url(https://edge.alluremedia.com.au/m/k/2016/06/31.jpg);*/
+/*}*/
+
+/*Slideshow CSS effect*/
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: -1;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://static.tumblr.com/ffc6b1cdaaf016e8dbf469c503c61a15/uxczkps/8ikn6nirv/tumblr_static_skyrim-scenery-wallpaper-hd-60430.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.imgur.com/CMIPLgg.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://i.ytimg.com/vi/CziSpStdCSg/maxresdefault.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://orig00.deviantart.net/e98b/f/2017/021/2/9/bloodborne_hunter_s_dream_unreal_wp_by_sicilium-daw6g4r.png);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://www.walldevil.com/wallpapers/a72/beautiful-game-wild-scenery.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
